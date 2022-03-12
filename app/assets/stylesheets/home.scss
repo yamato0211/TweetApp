@@ -1,0 +1,100 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+    background-color:#F4F5F7;
+}
+
+.top-wrapper{
+    text-align: center;
+    font-family:"Comic Sans MS";
+    height:400px;
+    h1{
+        padding-top:50px;
+        padding-bottom:50px;
+        font-size:60px;
+        color:gray;
+    }
+}
+
+
+.section-wrapper1{
+    
+    background:linear-gradient(to bottom left, transparent 50% , #33FF99 50%) ;
+    width:95%;
+    display:flex;
+    margin-bottom:120px;
+    img{
+        height:450px;
+        width:450px;
+        margin-left:50px;
+    }
+    div{
+        padding-top:100px;
+        padding-left:100px;
+        h2{
+            color:gray;
+            font-size:30px;
+        }
+        p{
+            padding-top:30px;
+            font-size:20px;
+            width:100%;
+            
+            color:gray;
+        }
+
+    }
+    
+    
+}
+
+.section-wrapper2{
+    background:linear-gradient(to bottom right, transparent 50% , #FFCCCC 50%) ;
+    width:95%;
+    display:flex;
+    margin:0 0 0 auto;
+    img{
+        height:450px;
+        width:450px;
+        margin-right:50px;
+    }
+    div{
+        padding-top:100px;
+        padding-right:100px;
+        h2{
+            color:gray;
+            font-size:30px;
+        }
+        p{
+            padding-top:30px;
+            font-size:20px;
+            width:100%;
+            margin:0 auto;
+            color:gray;
+        }
+
+    }
+}
+
+.text-box{
+    padding:150px 0;
+    h1{
+        font-size:50px;
+        margin-bottom:30px;
+    }
+    .login-wrap{
+        padding:15px 40px;
+        border-radius:5px;
+        box-shadow:2px 2px 3px gray;
+        background-color:skyblue;
+        display:inline;
+    }
+
+    .login-wrap:active{
+        position:relative;
+        top:2px;
+        left:2px;
+        box-shadow:none;
+    }
+}
