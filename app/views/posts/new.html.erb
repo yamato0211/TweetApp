@@ -1,1 +1,12 @@
-<h1>新規投稿作成ページです。</h1>
+<div class="form-wrapper">
+    <div class="form-items"> 
+        <%= form_tag("/posts/create") do %> 
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="form-label">投稿内容を記入してください</label>
+                <textarea class="form-control" rows="7" name="content" type="text"><%= @post.content %></textarea>
+                <small class="form-text text-muted textHelp">400字以内で記入してください</small>
+                <input type="submit" class="btn btn-primary" value="投稿する">
+            </div>
+        <% end %>
+    </div>
+</div>

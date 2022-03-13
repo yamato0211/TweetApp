@@ -26,8 +26,28 @@
                 line-height:40px;
             }
         }
+        .cardText{
+            text-decoration:none;
+            color:black;
+        }
     }
 
+}
+
+.form-wrapper{
+    .form-items{
+        width:50%;
+        margin:70px auto;
+
+        .textHelp{
+            display:block;
+            margin-bottom:12px;
+        }
+        .form-label{
+            font-size:25px;
+            margin-bottom:10px;
+        }
+    }
 }
 
 
