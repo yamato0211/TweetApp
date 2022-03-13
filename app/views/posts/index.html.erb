@@ -1,23 +1,14 @@
 <div class="list-wrapper">
     <ul class="item-wrapper">
-        <% posts=[{
-            :name => "yamato",
-            :content =>  "初めての投稿"
-        },
-        {
-            :name => "kumagae",
-            :content =>  "二回目の投稿"
-        }
-        ] %>
-        <% posts.each do |post| %>
+        <% @posts.each do |post| %>
             <li class="list-item">
                 <div class="card ">
                     <div class="card-body">
                         <div class="user-content">
                             <img src="/images/top_image1.png" class="user-image">
-                            <h5 class="card-title"><%= post[:name] %></h5>
+                            <h5 class="card-title">テストname</h5>
                         </div>
-                        <p class="card-text"><%= post[:content] %></p>
+                        <p class="card-text"><%= post.content %></p>
                     </div>
                 </div>
             </li>
