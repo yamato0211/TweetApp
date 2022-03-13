@@ -23,6 +23,11 @@ body{
     background:linear-gradient(to bottom left, transparent 50% , #33FF99 50%) ;
     width:95%;
     display:flex;
+    // @media screen and (max-width: 480px) {
+	// /* 480px以下に適用されるCSS（スマホ用） */
+    //    display:flex;
+    //    flex-direction:column;
+    // }
     margin-bottom:120px;
     img{
         height:450px;
@@ -53,6 +58,11 @@ body{
     background:linear-gradient(to bottom right, transparent 50% , #FFCCCC 50%) ;
     width:95%;
     display:flex;
+    // @media screen and (max-width: 480px) {
+	// /* 480px以下に適用されるCSS（スマホ用） */
+    //    display:flex;
+    //    flex-direction:column;
+    // }
     margin:0 0 0 auto;
     img{
         height:450px;
@@ -97,4 +107,13 @@ body{
         left:2px;
         box-shadow:none;
     }
+    .toLogin{
+        color:black;
+        text-decoration:none;
+    }
+}
+
+.auth{
+    color:black;
+    padding-bottom:10px;
 }
