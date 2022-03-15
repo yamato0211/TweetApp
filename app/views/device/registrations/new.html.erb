@@ -1,0 +1,37 @@
+<h2 class="sign-up-title">新規登録</h2>
+
+<%= form_tag("/users/create") do %>
+  <div class="form-group">
+    <%= render "devise/shared/error_messages", resource: resource %>
+    
+    <div class="field">
+      <label for="exampleFormControlTextarea1" class="form-label">ユーザー名</label>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="name">
+    </div>
+
+    <div class="field">
+      <label for="exampleFormControlTextarea1" class="form-label">eメール</label>
+      <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1" name="email">
+    </div>
+
+    <div class="field">
+      <label for="exampleFormControlTextarea1" class="form-label">パスワード</label>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %>文字以上で入力してください)</em>
+      <% end %><br />
+      <input type="text" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1" name="password">
+    </div>
+
+    <div class="field">
+      <label for="exampleFormControlTextarea1" class="form-label">パスワード（確認用）</label>
+      <input type="text" class="form-control" placeholder="confirm password" aria-label="confirm password" aria-describedby="basic-addon1" name="confirm-password">
+    </div>
+
+    <div class="actions">
+      <input type="submit" class="btn btn-primary" value="新規登録">
+    </div>
+  </div>
+
+<% end %>
+
+<%= render "devise/shared/links" %>

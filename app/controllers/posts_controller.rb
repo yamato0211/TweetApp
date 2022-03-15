@@ -20,4 +20,28 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
   end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    @post.content = params[:content]
+    if @post.save
+      flash[:notice] = "編集に成功しました"
+      redirect_to("/posts/index")
+    else
+      flash.now[:notice] = "変更内容も空欄もしくは400字以上では投稿できません"
+      render("posts/new")
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    flash[:notice] = "削除に成功しました"
+    redirect_to("/posts/index") 
+  end
+
 end

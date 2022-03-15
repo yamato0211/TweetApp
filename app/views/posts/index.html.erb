@@ -6,9 +6,9 @@
                     <div class="card-body">
                         <div class="user-content">
                             <img src="/images/top_image1.png" class="user-image">
-                            <h5 class="card-title">テストname</h5>
+                            <h5 class="card-title">User Name</h5>
                         </div>
-                        <%= link_to(post.content,"/posts/#{post.id}", class:"cardText")  %>
+                        <%= link_to(safe_join(post.content.split("\n"),tag(:br)),"/posts/#{post.id}", class:"cardText")  %>
                     </div>
                 </div>
             </li>
