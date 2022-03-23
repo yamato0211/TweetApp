@@ -6,8 +6,12 @@
                 <h5 class="card-title">User Name</h5>
             </div> 
             <p class="card-text"><%= safe_join(@post.content.split("\n"),tag(:br)) %></p>
-            <%= link_to("編集","/posts/#{@post.id}/edit",class:"card-link") %> 
-            <%= link_to("削除","/posts/#{@post.id}/destroy",method:"post",class:"card-link") %> 
+            <div class="post-detail">
+                <p class="card-text create-time"><%= l @post.created_at %></p>
+                <%= link_to("編集","/posts/#{@post.id}/edit",class:"card-link") %> 
+                <%= link_to("削除","/posts/#{@post.id}/destroy",method:"post",class:"card-link") %> 
+            </div>
+            
         </div>
     </div>
 </div>

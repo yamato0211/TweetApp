@@ -59,6 +59,14 @@
             .card-link{
                 color:gray;
                 opacity:.7;
+                text-align:right;
+            }
+            .post-detail{
+                display:flex;
+                .create-time{
+                    color:gray;
+                    margin-right:60%;
+                }
             }
             .card-link:hover{
                 opacity:1;
